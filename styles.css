@@ -1,0 +1,203 @@
+body {
+  background-image: url(https://cdn.discordapp.com/attachments/1279493001969799181/1279814916190240848/abstract-grey-metallic-overlap-on-dark-circle-mesh-pattern-design-modern-luxury-futuristic-background-vector.png?ex=66d5d005&is=66d47e85&hm=d68c07b072fe86df36b1ace11ed3f3db3991dd82cab535be8561506bd4ffc92c&);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: none;
+}
+h2{
+  text-align: center;
+}
+h3,h4{
+  font-size: medium;
+}
+
+.logout-style{
+  text-decoration: none;
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute; /* Ensure the cursor stays fixed on the screen */
+  pointer-events: none; /* Ensure the cursor does not interfere with mouse events */
+  z-index: 9999; /* Ensure the cursor is above other elements */
+  transition: transform 0.3s ease; /* Add transition for smooth movement */
+  transition-duration: 200ms;
+  animation: cursorAnim 0.5s infinite alternate;
+}
+
+.cursor::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border: 8px solid rgb(162, 162, 162);
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -18px; /* Position the cursor at the center of the mouse */
+  left: -18px; /* Position the cursor at the center of the mouse */
+  transform: translate(-18px, -18px);
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 2px solid red;
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.navbar {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+.dropdown-item:hover {
+  background-color: #343a40; /* Change the background color on hover */
+}
+/* Transparent box style */
+.transparent-box {
+  background-color: rgba(65, 65, 65, 0.7); /* Black color with 70% opacity */
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(215, 215, 215); /* Text color */
+}
+.image-container {
+  border-radius: 30px;
+}
+/* Additional custom styles */
+.image-container:hover {
+  scale: 1.1;
+  transition: 1.375s;
+}
+
+.scene {
+  perspective: 1000px;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  animation: spin 20s infinite linear;
+}
+
+.cube {
+  background-image: url(!#);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  background-position: center;
+  background-size: cover;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Footer Styles */
+footer {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  color: white; /* Text color */
+  padding: 20px 0; /* Adjust top and bottom padding as needed */
+}
+
+/* Logo Style */
+footer img {
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+/* Links Style */
+footer a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Links on Hover Style */
+footer a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Copyright Style */
+footer p {
+  margin-top: 20px; /* Adjust margin as needed */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+@media (max-width: 500px) {
+  body {
+    background-image: url(Images/SMC3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
