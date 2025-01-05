@@ -120,7 +120,7 @@ function isLoggedIn()
 
                             // SMTP configuration
                             $mail->isSMTP();
-                            $mail->Host = "smtp.gmail.com";
+                            $mail->Host = ""smtp.gmail.com"";
                             $mail->SMTPAuth = true;
                             $mail->Username = 'abdiqanibashir.h@gmail.com'; // Replace with your Gmail username
                             $mail->Password = 'qzfnvkbwkjhtajxn'; // Replace with your Gmail password
