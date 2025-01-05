@@ -122,8 +122,8 @@ function isLoggedIn()
                             $mail->isSMTP();
                             $mail->Host = ""smtp.gmail.com"";
                             $mail->SMTPAuth = true;
-                            $mail->Username = 'abdiqanibashir.h@gmail.com'; // Replace with your Gmail username
-                            $mail->Password = 'qzfnvkbwkjhtajxn'; // Replace with your Gmail password
+                            $mail->Username = 'YourGmail@gmail.com'; // Replace with your Gmail username
+                            $mail->Password = 'YourPassword'; // Replace with your Gmail password
                             $mail->SMTPSecure = 'tls'; // Use TLS encryption
                             $mail->Port = 587; // Port for TLS (587)
             
